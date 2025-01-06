@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Flappy Bird</title>
+    <title>Cookie Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background"></div>
-    <img class="bird" src="logo.png" alt="bird-img">
-    <div class="message">Press Enter To Start Game</div>
-    <div class="score">
-        <span class="score_title"></span>
-        <span class="score_val"></span>
+
+    <h1>Cookie Clicker Game</h1>
+    <img id="cookie" src="https://via.placeholder.com/200?text=Cookie" alt="Cookie" />
+    <div id="score">Cookies: 0</div>
+    <div>
+        <button class="upgrade" id="upgrade1">Upgrade 1: +1 Cookie per Click (Cost: 10 Cookies)</button>
+        <button class="upgrade" id="upgrade2">Upgrade 2: +5 Cookies per Click (Cost: 50 Cookies)</button>
+        <button class="upgrade" id="upgrade3">Upgrade 3: +10 Cookies per Click (Cost: 100 Cookies)</button>
     </div>
-    <script src="game.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
