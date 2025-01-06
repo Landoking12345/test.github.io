@@ -1,61 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100vw;
+    margin: 0;
 }
 
-.background {
-    height: 100vh;
-    width: 100vw;
-    background-color: skyblue;
+h1 {
+    color: #333;
 }
 
-.bird {
-    height: 100px;
-    width: 160px;
-    position: fixed;
-    top: 40vh;
-    left: 30vw;
-    z-index: 100;
+#cookie {
+    width: 200px;
+    cursor: pointer;
+    margin: 20px;
 }
 
-.pipe_sprite {
-    position: fixed;
-    top: 40vh;
-    left: 100vw;
-    height: 70vh;
-    width: 6vw;
-    background-color: green;
+#score {
+    font-size: 24px;
+    margin: 20px;
 }
 
-.message {
-    position: fixed;
-    z-index: 10;
-    height: 10vh;
-    font-size: 10vh;
-    font-weight: 100;
-    color: black;
-    top: 12vh;
-    left: 20vw;
-    text-align: center;
+.upgrade {
+    margin: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.score {
-    position: fixed;
-    z-index: 10;
-    height: 10vh;
-    font-size: 10vh;
-    font-weight: 100;
-    color: goldenrod;
-    top: 0;
-    left: 0;
-}
-
-.score_val {
-    color: gold;
+.upgrade:disabled {
+    background-color: #ccc;
 }
